@@ -15,8 +15,6 @@ import About         from "./pages/About";
 export default function App() {
   const [page, setPage]       = useState("home");
   const [toastMsg, setToastMsg] = useState(null);
-  const { user, logout }      = useAuth();
-  const { cart }              = useCart();
 
   const toast = (msg) => {
     setToastMsg(msg);
