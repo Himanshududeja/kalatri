@@ -15,6 +15,7 @@ import About         from "./pages/About";
 export default function App() {
   const [page, setPage]       = useState("home");
   const [toastMsg, setToastMsg] = useState(null);
+  const { user } = useContext(AuthContext);
 
   const toast = (msg) => {
     setToastMsg(msg);
